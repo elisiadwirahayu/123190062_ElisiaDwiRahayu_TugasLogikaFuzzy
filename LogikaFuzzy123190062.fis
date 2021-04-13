@@ -1,0 +1,99 @@
+[System]
+Name='LogikaFuzzy123190062'
+Type='mamdani'
+Version=2.0
+NumInputs=3
+NumOutputs=3
+NumRules=36
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Suhu'
+Range=[0 40]
+NumMFs=4
+MF1='SangatDingin':'trimf',[0 5 10]
+MF2='Dingin':'trimf',[10 15 20]
+MF3='Panas':'trimf',[30 35 40]
+MF4='Hangat':'trimf',[20 25 30]
+
+[Input2]
+Name='CurahHujan'
+Range=[0 6000]
+NumMFs=3
+MF1='Rendah':'trimf',[0 600 1200]
+MF2='Sedang':'trimf',[1200 2400 3600]
+MF3='Tinggi':'trimf',[3600 4800 6000]
+
+[Input3]
+Name='KelembabanUdara'
+Range=[0 100]
+NumMFs=3
+MF1='Rendah':'trimf',[0 20 40]
+MF2='Sedang':'trimf',[40 55 70]
+MF3='Tinggi':'trimf',[70 85 100]
+
+[Output1]
+Name='Stroberi'
+Range=[1 7]
+NumMFs=3
+MF1='TidakCocok':'trimf',[1 2 3]
+MF2='KurangCocok':'trimf',[3 4 5]
+MF3='Cocok':'trimf',[5 6 7]
+
+[Output2]
+Name='Jeruk'
+Range=[1 7]
+NumMFs=3
+MF1='TidakCocok':'trimf',[1 2 3]
+MF2='KurangCocok':'trimf',[3 4 5]
+MF3='Cocok':'trimf',[5 6 7]
+
+[Output3]
+Name='Semangka'
+Range=[1 7]
+NumMFs=3
+MF1='TidakCocok':'trimf',[1 2 3]
+MF2='KurangCocok':'trimf',[3 4 5]
+MF3='Cocok':'trimf',[5 6 7]
+
+[Rules]
+2 1 3, 3 1 1 (1) : 1
+4 2 2, 1 3 2 (1) : 1
+4 1 2, 1 1 3 (1) : 1
+2 1 1, 2 1 1 (1) : 1
+2 1 2, 2 1 2 (1) : 1
+2 2 1, 1 1 1 (1) : 1
+2 2 2, 1 2 1 (1) : 1
+2 2 3, 2 1 1 (1) : 1
+2 3 1, 1 1 1 (1) : 1
+2 3 2, 1 1 1 (1) : 1
+2 3 3, 2 1 1 (1) : 1
+4 1 1, 1 1 2 (1) : 1
+4 1 3, 2 1 2 (1) : 1
+4 2 1, 1 2 1 (1) : 1
+4 2 3, 1 2 1 (1) : 1
+4 3 1, 1 1 1 (1) : 1
+4 3 2, 1 2 2 (1) : 1
+4 3 3, 1 1 1 (1) : 1
+3 1 1, 1 1 1 (1) : 1
+3 1 2, 1 1 2 (1) : 1
+3 1 3, 2 1 2 (1) : 1
+3 2 1, 1 1 1 (1) : 1
+3 2 2, 1 2 1 (1) : 1
+3 2 3, 1 1 1 (1) : 1
+3 3 1, 1 1 1 (1) : 1
+3 3 2, 1 1 1 (1) : 1
+3 3 3, 1 1 1 (1) : 1
+1 1 1, 1 1 1 (1) : 1
+1 1 2, 2 1 1 (1) : 1
+1 1 3, 2 1 1 (1) : 1
+1 2 1, 2 1 1 (1) : 1
+1 2 2, 1 2 1 (1) : 1
+1 2 3, 1 1 1 (1) : 1
+1 3 2, 1 1 1 (1) : 1
+1 3 1, 1 1 1 (1) : 1
+1 3 3, 1 1 1 (1) : 1

@@ -1,0 +1,12 @@
+Nama	: Elisia Dwi Rahayu
+NIM	: 123190062
+
+Penerapan Logika Fuzzy Untuk Menentukan Tanaman yang Cocok Untuk Ditanam di Suatu Daerah
+
+Terdapat 3 macam benih tanaman berbeda, yaitu tanaman stroberi, jeruk, dan semangka. Diketahui ada tiga hal yang
+dapat mempengaruhi ketiga benih tanaman tersebut tidak cocok, kurang cocok, atau cocok untuk ditanam di daerah
+yang berbeda. Adapun ketiga hal yang mempengaruhi tersebut yaitu suhu, curah hujan, dan kelembaban udara. Sebagai contoh
+adalah tanaman stroberi yang cocok ditanam di suatu daerah dengan suhu dingin, curah hujan rendah, dan kelembaban udara
+tinggi. Sedangkan tanaman jeruk cocok ditanam di suatu daerah dengan suhu hangat, curah hujan sedang, dan kelembaban udara
+sedang. Tanaman semangka cocok ditanam di suatu daerah dengan suhu hangat, curah hujan rendah, dan kelembaban udara
+sedang. Batasan tiap suhu, curah hujan, dan kelembaban udara tidaklah jelas maka dari itu bersifat fuzzy.
